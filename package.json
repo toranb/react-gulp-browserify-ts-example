@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gulp": "*",
+    "react": "*",
+    "browserify": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "jshint": "*"
+  }
+}
