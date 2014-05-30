@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "gulp": "*",
-    "react": "*",
+    "gulp-tsc": "*",
+    "gulp-react": "*",
     "browserify": "*",
-    "reactify": "*",
     "vinyl-source-stream": "*",
     "jshint": "*"
   }
