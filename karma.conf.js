@@ -3,8 +3,14 @@ module.exports = function(karma) {
         browsers: ["PhantomJS"],
         frameworks: ["mocha", "chai"],
         files: ["dist/deps.min.js"],
-        reporters: ["progress"],
+        reporters: ['progress', 'coverage'],
         singleRun: false,
         autoWatch: true,
+        preprocessors: {
+          "dist/deps.min.js": "coverage"
+        },
+        coverageReporter: {
+            type: "text",
+        }
     });
 };

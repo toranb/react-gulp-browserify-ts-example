@@ -14,6 +14,7 @@
     "phantomjs": "*",
     "karma": "~0.10",
     "karma-mocha": "*",
-    "karma-chai": "*"
+    "karma-chai": "*",
+    "karma-coverage": "*"
   }
 }
