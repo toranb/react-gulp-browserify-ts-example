@@ -1,4 +1,4 @@
-A simple react app using gulp and browserify for the client side build step
+A simple typescript app using react components and gulp/browserify for the client side build step
 
 
 To run the react app locally
