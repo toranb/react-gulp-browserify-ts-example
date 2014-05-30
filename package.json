@@ -6,6 +6,14 @@
     "gulp-react": "*",
     "browserify": "*",
     "vinyl-source-stream": "*",
-    "jshint": "*"
+    "jshint": "*",
+    "gulp-karma": "*",
+    "gulp-concat": "*",
+    "event-stream": "*",
+    "gulp-mocha-browserify-suite": "*",
+    "phantomjs": "*",
+    "karma": "~0.10",
+    "karma-mocha": "*",
+    "karma-chai": "*"
   }
 }

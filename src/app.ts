@@ -7,4 +7,4 @@ var React:any = require('react');
 var hat = new Hat("World");
 var str = hat.go();
 
-React.renderComponent(Hello({name: str}), document.getElementById('app'));
+React.renderComponent(Hello({name: str}), document.body);
