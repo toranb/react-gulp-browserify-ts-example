@@ -10,3 +10,6 @@ To run the react app locally
     python -m SimpleHTTPServer 3000
 
     visit http://localhost:3000 to see the running app
+
+
+To see this example with karma / mocha / chai checkout the tests branch
