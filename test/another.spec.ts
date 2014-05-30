@@ -4,7 +4,7 @@
 
 var chai = require('chai');
 var expect = chai.expect;
-var Hat = require('./hat');
+var Hat = require('../src/hat');
 
 describe("another", function() {
     it("test", function() {

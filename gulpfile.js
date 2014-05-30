@@ -19,29 +19,29 @@ var options = {
 gulp.task('jsx', function() {
     return gulp.src('src/**/*.jsx')
       .pipe(react())
-      .pipe(gulp.dest('build/js'));
+      .pipe(gulp.dest('build/src'));
 });
 
 gulp.task('tsc', ['jsx'], function() {
     return es.merge(
         gulp.src('src/**/*.ts')
             .pipe(tsc(options))
-            .pipe(gulp.dest('build/js')),
+            .pipe(gulp.dest('build/src')),
         gulp.src('test/**/*.ts')
             .pipe(tsc(options))
-            .pipe(gulp.dest('build/js'))
+            .pipe(gulp.dest('build/test'))
     );
 });
 
 gulp.task('default', ['tsc'], function() {
-    return browserify({entries: './build/js/app.js'})
+    return browserify({entries: './build/src/app.js'})
         .bundle({ debug: true })
         .pipe(source('deps.min.js'))
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task('test-suite', ['tsc'], function() {
-    return gulp.src('build/js/**/*spec.js')
+    return gulp.src('build/test/**/*spec.js')
         .pipe(generateSuite())
         .pipe(concat('suite.js'))
         .pipe(gulp.dest('dist'));
