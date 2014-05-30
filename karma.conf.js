@@ -7,7 +7,7 @@ module.exports = function(karma) {
         singleRun: false,
         autoWatch: true,
         preprocessors: {
-          "dist/deps.min.js": "coverage"
+          "build/**/*.js": "coverage"
         },
         coverageReporter: {
             type: "text",

@@ -47,11 +47,15 @@ gulp.task('test-suite', ['tsc'], function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('test', ['test-suite'], function() {
+gulp.task('test-browserify', ['test-suite'], function() {
     return browserify({entries: './dist/suite.js'})
         .bundle({ debug: true })
         .pipe(source('deps.min.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('test', ['test-browserify'], function(){
+    return gulp.src('dist/deps.min.js')
         .pipe(karma({
             configFile: 'karma.conf.js',
             action: 'run'
