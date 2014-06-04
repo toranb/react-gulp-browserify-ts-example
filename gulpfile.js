@@ -6,7 +6,7 @@ var browserify = require('browserify');
 var concat = require('gulp-concat');
 var es = require('event-stream');
 var karma = require('gulp-karma');
-var generateSuite = require('gulp-mocha-browserify-suite');
+var generateSuite = require('gulp-mocha-browserify-sweet');
 
 var options = {
     "sourceMap": true,

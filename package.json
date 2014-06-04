@@ -10,7 +10,7 @@
     "gulp-karma": "*",
     "gulp-concat": "*",
     "event-stream": "*",
-    "gulp-mocha-browserify-suite": "*",
+    "gulp-mocha-browserify-sweet": "*",
     "phantomjs": "*",
     "karma": "~0.10",
     "karma-mocha": "*",
